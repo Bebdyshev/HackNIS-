@@ -37,7 +37,7 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
                     className="rounded-sm text-green-500 code text-[40px] pointer flex"
                   >
                     {'>'}SIGN UP<span className={color}>{dots}</span>
