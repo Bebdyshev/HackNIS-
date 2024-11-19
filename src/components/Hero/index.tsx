@@ -19,13 +19,13 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden pt-[120px] pb-[130px] md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px] md:h-screen"
+        className="relative z-10 overflow-hidden pt-[120px] md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px] md:h-screen"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="text-[50px] font-bold leading-tight text-black dark:text-white sm:text-[70px] sm:leading-tight md:text-[150px] md:leading-tight">
+              <div className="mx-auto max-w-[800px] text-center sm:mt-[150px] md:mt-[80px]">
+                <h1 className="text-[80px] mt-[150px] font-bold leading-tight text-black dark:text-white sm:text-[100px] sm:leading-tight md:text-[150px] md:leading-tight md:mt-[10px]">
                   Hack
                   <span className="text-[#43C065]">NIS?</span>
                 </h1>
@@ -35,12 +35,12 @@ const Hero = () => {
                     we trust
                   </span>
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 mt-[200px] pb-[150px] sm:pb-[180px] md:mt-[50px]">
                   <Link
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfQM3VXCw3EO5DLD1vhL5q5VgBscEJzcnumoLXQHQw7HoKprw/viewform?usp=sf_link"
                     className="rounded-sm text-green-500 code text-[40px] pointer flex"
                   >
-                    {'>'}SIGN UP<span className={color}>{dots}</span>
+                    {'>'}ЗАРЕГАЙСЯ<span className={color}>{dots}</span>
                   </Link>
                 </div>
               </div>

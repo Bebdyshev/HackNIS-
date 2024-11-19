@@ -4,7 +4,7 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="pt-8">
+    <section className="md:pt-8 pb-4">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full">
@@ -26,7 +26,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, imageLight, name } = brand;
 
   return (
-    <div className="flex items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 justify-center my-[2px] px-[5px] mt-10">
+    <div className="flex items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/4 sm:h-1/2 md:h-[80px] lg:h-1/3 xl:h-[50px] justify-center my-[2px] px-[5px] md:mt-10">
       <a
         href={href}
         target="_blank"
