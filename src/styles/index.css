@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pixelify+Sans:wght@400..700&family=Poppins&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +15,16 @@
 
   .code {
     font-family: "Pixelify Sans", sans-serif;
+  }
+
+  .coderus {
+    font-family: "Tiny5", sans-serif;
+  }
+
+  .highlight {
+    padding: 1px 1px 1px 1px;
+    background-color: #2ed55a;
+    border-radius: 5px;
   }
 }
 

@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <>
       <section
-        id="home"
+        id="faq"
         className="relative z-10 overflow-hidden pt-[120px] md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px] md:h-screen"
       >
         <div className="container">
@@ -40,7 +40,7 @@ const Hero = () => {
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfQM3VXCw3EO5DLD1vhL5q5VgBscEJzcnumoLXQHQw7HoKprw/viewform?usp=sf_link"
                     className="rounded-sm text-green-500 code text-[40px] pointer flex"
                   >
-                    {'>'}ЗАРЕГАЙСЯ<span className={color}>{dots}</span>
+                    {'>'}ЗАРЕГАTЬСЯ<span className={color}>{dots}</span>
                   </Link>
                 </div>
               </div>

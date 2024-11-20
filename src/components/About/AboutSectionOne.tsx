@@ -6,33 +6,32 @@ const AboutSectionOne = () => {
           <div className="px-4 w-full">
             <div className="mb-12 w-full lg:mb-0" data-wow-delay=".15s">
               
-              <div className="border-b border-body-color/[.15] pb-4 dark:border-white/[.15] flex items-center justify-between">
+              <div className="border-b border-body-color/[.15] py-2 dark:border-white/[.15] flex items-center justify-between">
                 <p className="code text-black dark:text-white text-[40px] md:text-[80px] lg:text-[150px]">
-                  When?
+                  Kогда?
                 </p>
-                <p className="text-[#43C065] text-[25px] md:text-[50px] lg:text-[75px]">
-                  9-10 January
+                <p className="text-[#2ed55a] text-[25px] md:text-[50px] lg:text-[75px]">
+                  9-10 Января
                 </p>
               </div>
 
-              <div className="border-b border-body-color/[.15] pb-4 dark:border-white/[.15] flex items-center justify-between">
+              <div className="border-b border-body-color/[.15] py-2 dark:border-white/[.15] flex items-center justify-between">
                 <p className="code text-black dark:text-white text-[40px] md:text-[80px] lg:text-[150px]">
-                  Where?
+                  Где?
                 </p>
-                <p className="text-[#43C065] text-[25px] md:text-[50px] lg:text-[75px]">
+                <p className="text-[#2ed55a] text-[25px] md:text-[50px] lg:text-[75px]">
                   NIS PhMD
                 </p>
               </div>
 
-              <div className="border-b border-body-color/[.15] pb-4 dark:border-white/[.15] flex items-center justify-between">
+              <div className="border-b border-body-color/[.15] py-2 dark:border-white/[.15] flex items-center justify-between">
                 <p className="code text-black dark:text-white text-[40px] md:text-[80px] lg:text-[150px]">
-                  How?
+                  Kак?
                 </p>
-                <p className="text-[#43C065] text-[25px] md:text-[50px] lg:text-[75px]">
-                  In teams of 2-4
+                <p className="text-[#2ed55a] text-[22px] md:text-[50px] lg:text-[75px]">
+                  В командах из 3-4
                 </p>
               </div>
-
             </div>
           </div>
         </div>

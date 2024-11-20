@@ -9,6 +9,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import FAQSection from "@/components/FAQ/faq";
 
 export const metadata: Metadata = {
   title: "HackNIS?",
@@ -21,11 +22,11 @@ export default function Home() {
     <>
       <Hero />
       <AboutSectionOne />
-      <div id="partners">
-
-      </div>
-      <Brands />
+      <FAQSection/>
       <AboutSectionTwo/>
+      
+      <div id="partners"></div>
+      <Brands />
     </>
   );
 }

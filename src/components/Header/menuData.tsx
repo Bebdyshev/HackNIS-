@@ -3,20 +3,20 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Agenda",
-    path: "#agenda",
+    title: "FAQ",
+    path: "#faq",
     newTab: false,
   },
   {
-    id: 2,
+    id: 3,
     title: "Partners",
     path: "#partners",
     newTab: false,
   },
   {
-    id: 3,
-    title: "About",
-    path: "#about",
+    id: 2,
+    title: "Roadmap",
+    path: "#roadmap",
     newTab: false,
   },
 ];
