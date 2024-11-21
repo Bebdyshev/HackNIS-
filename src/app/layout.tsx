@@ -21,7 +21,11 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="google-site-verification" content="uJuM6IrQ_6WPxG8noWjMKlYu2-ru2WzGCYp-cA_FJmo" />
+        <meta name="yandex-verification" content="800a455c66edca86" />
+      </head>
 
       <body className={``}>
         <Analytics/>
