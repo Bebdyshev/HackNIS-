@@ -22,7 +22,8 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head>
-      <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="google-site-verification" content="uJuM6IrQ_6WPxG8noWjMKlYu2-ru2WzGCYp-cA_FJmo" />
       </head>
 
       <body className={``}>
