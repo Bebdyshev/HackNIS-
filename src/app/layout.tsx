@@ -24,8 +24,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta name="google-site-verification" content="uJuM6IrQ_6WPxG8noWjMKlYu2-ru2WzGCYp-cA_FJmo" />
-        <meta name="yandex-verification" content="800a455c66edca86" />
-      </head>
+        <meta name="yandex-verification" content="db3c38784b9d5598" />      </head>
 
       <body className={``}>
         <Analytics/>
