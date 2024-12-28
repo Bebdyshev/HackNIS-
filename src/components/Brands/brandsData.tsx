@@ -15,6 +15,13 @@ const brandsData: Brand[] = [
     image: "/images/brands/it.svg",
     imageLight: "/images/brands/it.svg",
   },
+  {
+    id: 3,
+    name: "Cargo",
+    href: "https://www.instagram.com/silkway.cargo/#",
+    image: "/images/brands/cargo.svg",
+    imageLight: "/images/brands/cargo.svg",
+  },
 ];
 
 export default brandsData;
