@@ -4,16 +4,13 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="mt-[50px] md:pt-8">
+    <section id="about" className="pt-5">
       <div className="container">
-        <div className="flex flex-wrap">
-          <div className="w-full">
-            <div className="flex flex-wrap items-center justify-center rounded-sm">
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
-            </div>
-          </div>
+      <div className="text-[40px] md:text-[50px] font-bold mb-8 ">Партнеры</div>
+        <div className="flex flex-wrap justify-center">
+          {brandsData.map((brand, index) => (
+            <SingleBrand key={index} brand={brand} />
+          ))}
         </div>
       </div>
     </section>

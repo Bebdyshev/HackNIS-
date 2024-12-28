@@ -11,7 +11,7 @@ const AboutSectionOne = () => {
                   Kогда?
                 </p>
                 <p className="text-[#2ed55a] text-[25px] md:text-[50px] lg:text-[75px]">
-                  9-10 Января
+                  6-8 Января
                 </p>
               </div>
 
@@ -20,7 +20,7 @@ const AboutSectionOne = () => {
                   Где?
                 </p>
                 <p className="text-[#2ed55a] text-[25px] md:text-[50px] lg:text-[75px]">
-                  NIS PhMD
+                  НИШ ФМН Актобе
                 </p>
               </div>
 
@@ -29,7 +29,7 @@ const AboutSectionOne = () => {
                   Kак?
                 </p>
                 <p className="text-[#2ed55a] text-[22px] md:text-[50px] lg:text-[75px]">
-                  В командах из 3-4
+                  В командах из 1-4
                 </p>
               </div>
             </div>

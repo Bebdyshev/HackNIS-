@@ -2,102 +2,95 @@ import React from 'react';
 
 const scheduleData = [
   {
-    id: 1,
-    name: 'Предрегистрация',
-    time: '20 Нояб - 16 Дек',
-    isColored: false,
-    day: 1,
+    day: '6 января',
+    location: 'НИШ Актобе, кабинеты информатики',
+    events: [
+      { time: '10:00-11:00', name: 'Регистрация участников' },
+      { time: '11:00', name: 'Открытие и оглашение кейсов' },
+      { time: '13:30', name: 'Кофе-брейк' },
+      { time: '14:00', name: 'Первый поток менторских встреч' },
+      { time: '17:00', name: 'Завершение работы в НИШ Актобе' },
+    ],
   },
   {
-    id: 2,
-    name: 'Мастер-классы',
-    time: '25 Нояб - 22 Дек',
-    isColored: false,
-    day: 1,
+    day: '7 января',
+    location: 'Aqtobe IT Hub',
+    events: [
+      { time: '9:00', name: 'Открытие Aqtobe IT Hub' },
+      { time: '10:00', name: 'Второй поток менторских встреч' },
+      { time: '12:30', name: 'Кофе-брейк' },
+      { time: '16:00', name: 'Кофе-брейк' },
+      { time: '16:30', name: 'Третий поток менторских встреч' },
+      { time: '19:00', name: 'Завершение работы Aqtobe IT Hub' },
+    ],
   },
   {
-    id: 3,
-    name: 'Анонс кейсов',
-    time: '23 Дек',
-    isColored: false,
-    day: 2,
-  },
-  {
-    id: 4,
-    name: 'Розыгрыш мерча',
-    time: '23-28 Дек',
-    isColored: false,
-    day: 2,
-  },
-  {
-    id: 5,
-    name: 'Хакатон',
-    time: '7-8 Янв',
-    isColored: false,
-    day: 3,
+    day: '8 января',
+    location: 'НИШ Актобе, кабинеты информатики',
+    events: [
+      { 
+        time: '9:00', 
+        name: 'Открытие НИШ Актобе',
+      },
+      { 
+        time: '9:30', 
+        name: 'Четвертый поток менторских встреч (НИШ Актобе)',
+      },
+      { 
+        time: '10:50', 
+        name: 'Начало приема презентаций и работ (НИШ Актобе)',
+      },
+      { 
+        time: '11:10', 
+        name: 'Конец приема презентаций и работ (НИШ Актобе)',
+      },
+      { 
+        time: '11:20', 
+        name: 'Оглашение порядка защиты (НИШ Актобе)',
+      },
+      { 
+        time: '11:30', 
+        name: 'Начало защиты (НИШ Актобе) (до 30 команд не более 3+2=5 минут на защиту с вопросами)',
+      },
+      { 
+        time: '13:00', 
+        name: 'Окончание защиты и Чай-брейк (НИШ Актобе)',
+      },
+      { 
+        time: '14:00', 
+        name: 'Награждение (НИШ Актобе)',
+      },
+    ],
   },
 ];
 
 const AboutSectionTwo = () => {
-  const dayOneEvents = scheduleData.filter(event => event.day === 1);
-  const dayTwoEvents = scheduleData.filter(event => event.day === 2);
-  const dayThreeEvents = scheduleData.filter(event => event.day === 3);
-
-  const renderEvents = (events) => (
-    <ul className="space-y-4 list-none">
-      {events.map((event) => (
-        <li
-          key={event.id}
-          className="flex justify-between items-center pl-4 relative"
-        >
-          <span
-            className={`text-lg ${
-              event.isColored ? 'text-[#43C065]' : 'text-black dark:text-white'
-            } text-[20px]`}
-          >
-            {'> '}{event.name}
-          </span>
-          <span className="text-[#2ed55a] text-[20px]">{event.time}</span>
-        </li>
-      ))}
-    </ul>
-  );
-
   return (
-    <section id="roadmap" className="pt-5 pb-5">
+    <section id="roadmap" className="pt-8">
       <div className="container">
-        <div className="flex flex-col lg:flex-row">
-          <div className="px-4 w-full lg:w-1/2">
-            <div className="pb-6 w-full lg:mb-0" data-wow-delay=".15s">
-              <div className="pb-4">
-                <p className="code text-black dark:text-white text-[40px] md:text-[70px] lg:text-[120px]">
-                  Roadmap
-                </p>
-              </div>
-            </div>
+        <div className="text-[40px] md:text-[50px] font-bold mb-8">Расписание</div>
+        {scheduleData.map((day, index) => (
+          <div key={index} className="mb-10">
+            <div className="text-2xl font-bold mb-4">{day.day} </div>
+            <div className="text-lg italic mb-4">{day.location}</div>
+            <table className="w-full border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-gray-100 dark:bg-[#43C065]">
+                  <th className="border border-[#43C065] px-4 py-2 text-left">Время</th>
+                  <th className="border border-[#43C065]  px-4 py-2 text-left">Мероприятие</th>
+                </tr>
+              </thead>
+              <tbody>
+                {day.events.map((event, idx) => (
+                  <tr key={idx}>
+                    <td className="border border-[#43C065] px-4 py-2">{event.time}</td>
+                    <td className="border border-[#43C065] px-4 py-2">{event.name}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-
-          {/* Right Column */}
-          <div className="px-2 w-full lg:w-1/2 lg:pl-10 space-y-8">
-            {/* Day 1 */}
-            <div>
-              <p className="text-2xl font-bold mb-2">20 ноября - 22 декабря</p>
-              {renderEvents(dayOneEvents)}
-            </div>
-
-            {/* Day 2 */}
-            <div>
-              <p className="text-2xl font-bold mb-2">23 - 28 декабря</p>
-              {renderEvents(dayTwoEvents)}
-            </div>
-
-            {/* Day 3 */}
-            <div>
-              <p className="text-2xl font-bold mb-2 ">7-8 января</p>
-              {renderEvents(dayThreeEvents)}
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

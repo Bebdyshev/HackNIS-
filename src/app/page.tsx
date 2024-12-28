@@ -39,8 +39,6 @@ export default function Home() {
       <AboutSectionOne />
       <FAQSection/>
       <AboutSectionTwo/>
-      
-      <div id="partners"></div>
       <Brands />
     </>
   );

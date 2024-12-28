@@ -30,14 +30,14 @@ const Hero = () => {
                   <span className="text-[#43C065]">NIS?</span>
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl text-black dark:text-white">
-                  In hackathon{' '}
-                  <span className="bg-[#30a851] text-white px-[3px] py-[2px] rounded-[5px] inline-block transform rotate-[-2deg]">
-                    we trust
+                  Сорвнование{' '}
+                  <span className="bg-[#30a851] text-white px-[3px] py-[2px] rounded-[5px] inline-block transform rotate-[-2deg] font-bold">
+                    IT решений
                   </span>
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 mt-[200px] pb-[150px] sm:pb-[180px] md:mt-[50px]">
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfQM3VXCw3EO5DLD1vhL5q5VgBscEJzcnumoLXQHQw7HoKprw/viewform?usp=sf_link"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfz-VDkAY-XukNcplYVZPXmtDRq7y9WwnPAHliwecnzT7xJ4A/viewform"
                     className="rounded-sm text-green-500 code text-[40px] pointer flex"
                   >
                     {'>'}ЗАРЕГАTЬСЯ<span className={color}>{dots}</span>

@@ -153,7 +153,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfQM3VXCw3EO5DLD1vhL5q5VgBscEJzcnumoLXQHQw7HoKprw/viewform?usp=sf_link"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfz-VDkAY-XukNcplYVZPXmtDRq7y9WwnPAHliwecnzT7xJ4A/viewform?usp=dialog"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-[#43C065] px-2 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-2 lg:px-3 xl:px-4"
                 >
                   РЕГИСТРАЦИЯ
